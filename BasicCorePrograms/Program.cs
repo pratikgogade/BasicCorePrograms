@@ -8,7 +8,7 @@ namespace BasicCoreProgram
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1. FlipCoin" + "\n" + "2. Leap Year " + "\n" + "3. Power Of Two" + "\n" + "4. Harmonic Number" + "\n" + "5. Exit");
+                Console.WriteLine("1. FlipCoin" + "\n" + "2. Leap Year " + "\n" + "3. Power Of Two" + "\n" + "4. Harmonic Number" + "\n" + "5. Prime Factor" + "\n" + "6. Exit");
                 Console.WriteLine("Enter The Above Mention Option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -30,6 +30,10 @@ namespace BasicCoreProgram
                         number.Harmonic();
                         break;
                     case 5:
+                        PrimeFactor prime = new PrimeFactor();
+                        prime.Prime();
+                        break;
+                    case 6:
                         flag = false;
                         Console.WriteLine("Try Again");
                         break;
