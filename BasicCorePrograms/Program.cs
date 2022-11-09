@@ -8,7 +8,7 @@ namespace BasicCoreProgram
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1. FlipCoin" + "\n" + "2. Leap Year " + "\n" + "3. Power Of Two" + "\n" + "4. Harmonic Number" + "\n" + "5. Prime Factor" + "\n" + "6. Find Quoteint and Remainder" + "\n" + "6. Exit");
+                Console.WriteLine("1. FlipCoin" + "\n" + "2. Leap Year " + "\n" + "3. Power Of Two" + "\n" + "4. Harmonic Number" + "\n" + "5. Prime Factor" + "\n" + "6. Find Quoteint and Remainder" + "\n" + "7. Swapping Two Numbers" + "\n" + "8. Exit");
                 Console.WriteLine("Enter The Above Mention Option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -38,6 +38,10 @@ namespace BasicCoreProgram
                         quo.Quotient();
                         break;
                     case 7:
+                        SwapTwoNumbers swa = new SwapTwoNumbers();
+                        swa.Swap();
+                        break;
+                    case 8:
                         flag = false;
                         Console.WriteLine("Try Again");
                         break;
